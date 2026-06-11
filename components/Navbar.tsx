@@ -33,7 +33,7 @@ export default function Navbar() {
         borderBottom: scrolled ? "1px solid rgba(0,212,255,0.1)" : "none",
       }}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
           <Shield
@@ -50,8 +50,8 @@ export default function Navbar() {
           <span className="cursor-blink" style={{ color: "var(--neon-cyan)", fontFamily: "var(--font-mono)" }}>_</span>
         </a>
 
-        {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        {/* Desktop nav — centred against full viewport */}
+        <ul className="hidden md:flex items-center gap-8 fixed left-1/2 -translate-x-1/2">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a

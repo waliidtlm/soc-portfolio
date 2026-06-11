@@ -45,7 +45,7 @@ export default function Contact() {
       className="relative py-32 px-6"
       style={{ zIndex: 1, background: "var(--bg-secondary)" }}
     >
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
