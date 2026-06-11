@@ -80,7 +80,7 @@ export default function Navbar() {
         </ul>
 
         {/* Status indicator */}
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2 fixed right-6">
           <div className="status-dot" />
           <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem", color: "var(--neon-green)" }}>
             AVAILABLE
